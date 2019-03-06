@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://com.vortic3.MANTO#"
+     xml:base="http://com.vortic3.MANTO"
+     xmlns:mao="http://com.vortic3.MANTO#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sch="http://schema.org/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasChildEntrance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasChildEntrance">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasParentStopPlace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasChildQuay -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasChildQuay">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasParentStopPlace"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasConnectionLink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasConnectionLink">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isConnectionLinkOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Line"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasOfLine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasOfLine">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isLineOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Line"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasParentStopPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasParentStopPlace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasTransfer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasTransfer">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isTransferOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#PublicTransport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasTransportFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasTransportFor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isTransportFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#PublicTransport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isConnectionLinkOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isConnectionLinkOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Line"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isLineOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isLineOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Line"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isTransferOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isTransferOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#PublicTransport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isTransportFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#isTransportFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#PublicTransport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasEscalator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasEscalator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasLift -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasLift">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasRamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasRamp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasTravelator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#hasTravelator">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#latitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#longitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#stopplaceCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#stopplaceCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#tariffZone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#tariffZone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#timeZone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#timeZone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#wheelchairAccess -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#wheelchairAccess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Entrance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Line"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#PublicTransport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#PublicTransport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#Quay"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rcce2/ontologies/2018/9/com.vortic3.com/MANTO#StopPlace"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
